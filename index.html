@@ -9,29 +9,47 @@
   <title>Frontend Mentor | Job Listings</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+  <header class="main-header">
+    <div class="main-header-image"></div>
+    <div id="filter-area" class="filter-area"></div>
+  </header>
+
   <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
+  <article class="job-listing-container">
+    <div class="job-listing-icon"></div>
+    <div class="job-listing-description-container">
+      <h2 class="company-name">Photosnap</h2>
+      <h3 class="new-listing">New!</h3>
+      <h3 class="featured-listing">Featured</h3>
+      <h1 class="job-title">Senior Frontend Developer</h1>
+      <p class="job-info">1d ago . Full Time . USA only</p>
+    </div>
+    
+    <hr>
+
+    <div class="job-listing-filters-container">
+      <!-- Role -->
+      <div class="filter-btn job-listing-filter-btn">Frontend</div>
+      
+      <!-- Level -->
+      <div class="filter-btn job-listing-filter-btn">Senior</div>
+      
+      <!-- Languages -->
+      <div class="filter-btn job-listing-filter-btn">HTML</div>
+      <div class="filter-btn job-listing-filter-btn">CSS</div>
+      <div class="filter-btn job-listing-filter-btn">JavaScript</div>
+      
+    </div>
+
+  </article>
   <!-- Item End -->
+  
 
   <!-- Item Start -->
   Manage
