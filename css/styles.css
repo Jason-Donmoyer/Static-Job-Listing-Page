@@ -1,0 +1,102 @@
+/*####################*/
+      /* IMPORTS */
+/*####################*/
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+/* font-family: 'Spartan', sans-serif; */
+
+
+
+/*####################*/
+     /* VARIABLES */
+/*####################*/
+
+:root {
+
+  /* Font Family */
+  --main-font-family: 'Spartan', sans-serif;
+
+  /* Font Weights */
+  --fw-normal: 500;
+  --fw-bold: 700;
+
+  /* Colors */
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --bg-light-grayish-cyan: hsl(180, 52%, 96%);
+  --filter-tablets-light-grayish-cyan: hsl(180, 31%, 95%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+}
+
+
+
+
+
+/*####################*/
+      /* STYLES */
+/*####################*/
+
+/* MOBILE FIRST */
+
+
+/* HTML and Box-Sizing Reset */
+html {
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
+/* Body */
+.main-container {
+  font-family: var(--main-font-family);
+  background-color: var(--bg-light-grayish-cyan);
+}
+
+
+/* Header */
+.main-header {
+  background-color: var(--desaturated-dark-cyan);
+  margin-bottom: 4.333333rem;
+}
+
+.main-header-image {
+  height: 10.4rem;
+  background-image: url('../images/bg-header-mobile.svg');
+}
+
+
+/* Job Listing Container */
+.job-listing-container {
+  width: 21.8rem;
+  height: 17.133333rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.066667rem;
+  background-color: var(--filter-tablets-light-grayish-cyan);
+  border-radius: 0.333333rem;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  position: relative;
+}
+
+/* logo */
+.company-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  margin-left: 1.6rem;
+  background-image: url(../images/photosnap.svg);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  top: -1.5rem;
+}
