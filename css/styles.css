@@ -24,6 +24,7 @@
 
   /* Colors */
   --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --filter-btn-background-color: hsla(180, 29%, 50%, 0.1);
   --bg-light-grayish-cyan: hsl(180, 52%, 96%);
   --filter-tablets-light-grayish-cyan: hsl(180, 31%, 95%);
   --dark-grayish-cyan: hsl(180, 8%, 52%);
@@ -79,11 +80,11 @@ html {
 /* Job Listing Container */
 .job-listing-container {
   width: 21.8rem;
-  height: 17.133333rem;
+  /* height: 17.133333rem; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2.666667rem;
-  background-color: var(--filter-tablets-light-grayish-cyan);
+  background-color: #fff;
   border-radius: 0.333333rem;
   box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
   /* position: relative; */
@@ -207,4 +208,38 @@ html {
   background-color: var(--dark-grayish-cyan);
   margin-left: 0.533333rem;
   margin-right: 0.533333rem
+}
+
+
+/* Job Listing Filters Container */
+
+.job-listing-filters-container {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  padding-bottom: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Filter Buttons */
+
+.filter-btn {
+  height: 2.133333rem;
+  margin-top: 1.066667rem;
+  margin-right: 1.066667rem;
+  background-color: var(--filter-tablets-light-grayish-cyan);
+  border-radius: 0.266667rem;
+  display: flex;
+  align-items: center;
+}
+
+.filter-btn-copy {
+  font-size: 0.866667rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.6rem;
+  letter-spacing: -0.006667rem;
+  color: var(--desaturated-dark-cyan);
+  text-align: center;
+  padding: 0.266667rem 0.533333rem;
 }
