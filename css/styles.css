@@ -77,6 +77,47 @@ html {
 }
 
 
+/* Filter Buttons Area */
+.filter-area {
+  width: 21.8rem;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 0.333333rem;
+  position: relative;
+  top: -6.333333rem;
+  margin-bottom: -3.333333rem;;
+}
+
+
+.filter-area-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15.933333rem;
+  padding-bottom: 1.066667rem;
+  padding-left: 1.066667rem;
+}
+
+.clear-btn-container {
+  width: 88px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.clear-btn {
+  font-size: 0.866667rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.6rem;
+  letter-spacing: -0.006667rem;
+  color: var(--dark-grayish-cyan);
+}
+
+
 /* Job Listing Container */
 .job-listing-container {
   width: 21.8rem;
@@ -112,6 +153,7 @@ html {
 /* Job Listing Decription Container */
 .job-listing-description-container {
   margin-left: 1.6rem;
+  margin-bottom: 1.066667rem;
   height: 5.866667rem;
   display: flex;
   flex-direction: column;
@@ -211,6 +253,15 @@ html {
 }
 
 
+/* Horizongtal Rule */
+.horizontal-line {
+  height: 0.066667rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  background-color: var(--dark-grayish-cyan);
+}
+
+
 /* Job Listing Filters Container */
 
 .job-listing-filters-container {
@@ -243,3 +294,5 @@ html {
   text-align: center;
   padding: 0.266667rem 0.533333rem;
 }
+
+
