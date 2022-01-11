@@ -80,7 +80,7 @@ html {
 /* Filter Buttons Area */
 .filter-area {
   width: 21.8rem;
-  display: none;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -99,6 +99,34 @@ html {
   padding-bottom: 1.066667rem;
   padding-left: 1.066667rem;
 }
+
+
+.filter-area-btn-container {
+  display: flex;
+}
+
+.filter-area-btn {
+  margin-right: 0rem;
+}
+
+.remove-btn {
+  height: 2.133333rem;
+  width: 2.133333rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--desaturated-dark-cyan);
+  margin-top: 1.066667rem;
+  margin-right: 1.066667rem;
+}
+
+
+.remove-btn-img {
+  height: 0.896rem;
+  width: 0.896rem;
+  background-image: url('../images/icon-remove.svg');
+}
+
 
 .clear-btn-container {
   width: 88px;
@@ -278,11 +306,15 @@ html {
 .filter-btn {
   height: 2.133333rem;
   margin-top: 1.066667rem;
-  margin-right: 1.066667rem;
+  
   background-color: var(--filter-tablets-light-grayish-cyan);
   border-radius: 0.266667rem;
   display: flex;
   align-items: center;
+}
+
+.job-listing-filter-btn {
+  margin-right: 1.066667rem;
 }
 
 .filter-btn-copy {
