@@ -80,7 +80,7 @@ html {
 /* Filter Buttons Area */
 .filter-area {
   width: 21.8rem;
-  display: flex;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -327,4 +327,26 @@ html {
   padding: 0.266667rem 0.533333rem;
 }
 
+
+
+/*####################*/
+   /* MEDIA QUERIES */
+/*####################*/
+
+
+@media only screen and (min-width: 415px) {
+
+  /* Header */
+  .main-header {
+    margin-bottom: 5.066667rem;
+  }
+
+
+  /* Main Header Image */
+  .main-header-image {
+    background-image: url(../images/bg-header-desktop.svg);
+  }
+
+
+}
 
