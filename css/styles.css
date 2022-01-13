@@ -344,8 +344,90 @@ html {
 
   /* Main Header Image */
   .main-header-image {
-    background-image: url(../images/bg-header-desktop.svg);
+    background-image: url('../images/bg-header-desktop.svg');
   }
+
+
+  /* Job Listing Container */
+  .job-listing-container {
+    width: 74rem;
+    height: 10.133333rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+
+
+  /* Company Logo */
+  .company-logo {
+    position: static;
+    height: 5.866667rem;
+    width: 5.866667rem;
+    margin-left: 2.666667rem;
+    margin-right: 1.6rem;
+  }
+
+
+  /* Job Listing Desktop Container */
+  .job-listing-desktop-container {
+    display: flex;
+    justify-content: space-between;
+    width: 61.2rem;
+  }
+
+
+  /* Job Listing Description Container */
+  .job-listing-description-container {
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    width: 17.7333333rem;
+  }
+
+
+  /* Company Name */
+  .company-name {
+    font-size: 0.933333rem;
+  }
+
+
+  /* Job Title */
+  .job-title {
+    font-size: 1.2rem;
+  }
+
+
+  /* Job Info */
+  .job-info {
+    font-size: 1rem;
+  }
+
+
+  /* Small Circle */
+  .small-circle {
+    margin-left: 1.066667rem;
+    margin-right: 1.066667rem;
+  }
+
+
+  /* Horizontal Line */
+  .horizontal-line {
+    display: none;
+  }
+
+
+  /* Job Listing Filter Container */
+  .job-listing-filters-container{
+    margin: 0rem;
+    padding: 0rem;
+    align-items: center;
+  }
+
+
+  /* Job Listing Filter Button  */
+  .job-listing-filter-btn {
+    margin-top: 0rem;
+  }
+
 
 
 }
