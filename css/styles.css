@@ -80,7 +80,7 @@ html {
 /* Filter Buttons Area */
 .filter-area {
   width: 21.8rem;
-  display: none;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -107,6 +107,7 @@ html {
 
 .filter-area-btn {
   margin-right: 0rem;
+  border-radius: 0.266667rem 0 0 0.266667rem !important;
 }
 
 .remove-btn {
@@ -116,6 +117,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: var(--desaturated-dark-cyan);
+  border-radius: 0 0.266667rem 0.266667rem 0;
   margin-top: 1.066667rem;
   margin-right: 1.066667rem;
 }
@@ -348,6 +350,42 @@ html {
   }
 
 
+  /* Filter Area */
+  .filter-area {
+    width: 74rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content:space-between;
+  }
+
+
+  /* Filter Area Buttons Container */
+  .filter-area-buttons-container {
+    width: auto;
+    padding: 0rem;
+    margin-left: 2.666667rem;
+    align-items: center;
+  }
+
+
+  /* Filter Area Buttons */
+  .filter-area-btn {
+    margin-top: 0rem;
+  }
+
+
+  /* Remove Button */
+  .remove-btn {
+    margin-top: 0rem;
+  }
+
+
+  /* Clear Button Container */
+  .clear-btn-container {
+    margin-right: 1.4rem;
+  }
+
+
   /* Job Listing Container */
   .job-listing-container {
     width: 74rem;
@@ -355,6 +393,7 @@ html {
     display: flex;
     align-items: center;
     margin-bottom: 1.6rem;
+    
   }
 
 
