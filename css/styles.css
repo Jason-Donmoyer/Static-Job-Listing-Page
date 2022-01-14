@@ -80,7 +80,7 @@ html {
 /* Filter Buttons Area */
 .filter-area {
   width: 21.8rem;
-  display: flex;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -88,7 +88,7 @@ html {
   border-radius: 0.333333rem;
   position: relative;
   top: -6.333333rem;
-  margin-bottom: -3.333333rem;;
+  margin-bottom: -3.333333rem;
 }
 
 
@@ -336,7 +336,7 @@ html {
 /*####################*/
 
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 915px) {
 
   /* Header */
   .main-header {
@@ -354,7 +354,8 @@ html {
   .filter-area {
     width: 74rem;
     height: 4.8rem;
-    display: flex;
+    top: -7.333333rem;
+    margin-bottom: -2.666667rem;
     justify-content:space-between;
   }
 
