@@ -124,7 +124,7 @@ function updateUI(jobListings) {
 
 // Fetch API call to extract json data
 async function getJobListings() {
-  const response = await fetch('../data.json')
+  const response = await fetch('https://jason-donmoyer.github.io/JSON-Files/job-listing-data.json')
   .then(response => {
     return response.json();
   })
