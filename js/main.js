@@ -101,7 +101,7 @@ function updateUI(jobListings) {
 
   let horizontalLine = document.createElement('div');
     horizontalLine.classList.add('horizontal-line');
-    jobListingDescriptionContainer.appendChild(horizontalLine);
+    desktopListing.appendChild(horizontalLine);
 
   let jobListingFiltersContainer = document.createElement('div');
     jobListingFiltersContainer.classList.add('job-listing-filters-container')
