@@ -261,6 +261,7 @@ html {
 /* Job Listing Ifo Container */
 .job-listing-info-container {
   height: 1.6rem;
+  width: max-content;
   display: flex;
   align-items: center;
 }
