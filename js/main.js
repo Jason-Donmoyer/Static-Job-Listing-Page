@@ -1,7 +1,87 @@
 // array to hold job listing information
 const jobListings = [];
+// array to hold filter area buttons
+let filterButtonsArray = [];
 
+// Main application sections
 const mainContainer = document.getElementById('main-container');
+const filterArea = document.getElementById('filter-area');
+const filterAreaButtonsContainer = document.getElementById('filter-area-buttons-container');
+
+
+
+// Event Listener For Filter Buttons
+function filterButtonClickHandler() {
+  const filterButtons = document.querySelectorAll('.job-listing-filter-btn');
+  const clearBtn = document.getElementById('clear-btn');
+
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      console.log(button.textContent);
+      filterArea.style.display = 'flex';
+      // console.log(typeof button.innerHTML);
+      createFilterAreaButton(button);
+      // filterAreaButtonsContainer.appendChild(newBtn);
+      
+    });
+    
+  });
+
+  // clears all buttons from filterArea and hides filterArea
+  clearBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    filterArea.style.display = 'none';
+    filterButtonsArray = [];
+    removeChildNodes(filterAreaButtonsContainer);
+  });
+}
+
+
+// add button to filter area from filterButtonsArray
+function addFilterButton(arr) {
+  arr.forEach(btn => filterAreaButtonsContainer.appendChild(btn));
+}
+
+
+// removes all children of filterButtonAreaContainer 
+function removeChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild)
+  }
+}
+
+
+function createFilterAreaButton(button) {
+  let filterAreaBtnContainer = document.createElement('div');
+  filterAreaBtnContainer.classList.add('filter-area-btn-container');
+  let filterAreaBtn = document.createElement('div');
+  filterAreaBtn.classList.add('filter-btn');
+  filterAreaBtn.classList.add('filter-area-btn');
+  
+  let filterBtnCopy = document.createElement('p');
+  filterBtnCopy.classList.add('filter-btn-copy');
+  filterBtnCopy.textContent = button.textContent;
+
+  filterAreaBtn.appendChild(filterBtnCopy);
+
+  let removeBtn = document.createElement('div');
+  removeBtn.classList.add('remove-btn');
+  let removeBtnImg = document.createElement('div');
+  removeBtnImg.classList.add('remove-btn-img');
+
+  removeBtn.appendChild(removeBtnImg);
+
+  filterAreaBtnContainer.appendChild(filterAreaBtn);
+  filterAreaBtnContainer.appendChild(removeBtn);
+
+  filterButtonsArray.push(filterAreaBtnContainer);
+
+  addFilterButton(filterButtonsArray);
+}
+
+
 
 
 function makeCircle(par) {
@@ -105,6 +185,7 @@ function updateUI(jobListings) {
 
   let jobListingFiltersContainer = document.createElement('div');
     jobListingFiltersContainer.classList.add('job-listing-filters-container')
+    jobListingFiltersContainer.id = 'job-listing-filters-container';
     desktopListing.appendChild(jobListingFiltersContainer);
 
     listing.filters.forEach((filter) => {
@@ -144,6 +225,8 @@ async function getJobListings() {
       jobListings.push(jobListing);
     }
     updateUI(jobListings);
+    filterButtonClickHandler();
+    // addBtn(filterButtons);
   })
   .catch(err => {
     console.log(err);
